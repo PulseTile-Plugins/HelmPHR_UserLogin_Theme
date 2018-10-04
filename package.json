@@ -1,0 +1,23 @@
+{
+  "name": "helmphr_userlogin_theme",
+  "version": "1.0.0",
+  "description": "for user login page for Helm PHR theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simongamester/HelmPHR_UserLogin_Theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simongamester/HelmPHR_UserLogin_Theme/issues"
+  },
+  "homepage": "https://github.com/simongamester/HelmPHR_UserLogin_Theme#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "remodal": "^1.1.1"
+  }
+}
