@@ -269,6 +269,13 @@ header {
     color: #3596f4;
   }
 
+.forgotten {
+  float: left;
+  line-height: 43px;
+  display: inline-block;
+  font-size: 13px;
+}
+
 .footer {
   /* position: absolute;
   bottom: 0; */
