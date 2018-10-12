@@ -6,7 +6,12 @@ var inst = $('[data-remodal-id=modal]').remodal(options);
 // Login Click
 $('.login').click(function(e){
   e.preventDefault();
-  inst.open();
+
+  if( Cookies.get('acceptTerms') != 'true' ){
+    inst.open();
+  } else {
+    $(this).closest('form').submit();
+  }
 });
 
 // Login enter
@@ -20,7 +25,12 @@ $(window).keydown(function(e){
 // Agree to terms
 $('.agree').click(function(e){
   e.preventDefault();
+
+  // Set Cookie
+  Cookies.set('acceptTerms', 'true', { expires: 30 });
+
   $( $(this).attr('data-target') ).submit();
+
 });
 
 // Decline terms
