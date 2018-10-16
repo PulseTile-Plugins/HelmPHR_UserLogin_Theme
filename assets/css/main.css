@@ -52,8 +52,8 @@ body {
   position: relative;
   background: url(/assets/background.png);
   background-size: cover;
-  /* min-height: 100vh; */
-  height: calc(100vh - 217px);
+  min-height: 620px;
+  height: calc(100vh - 186px);
   padding: 100px 15px 0 15px;
 }
 
@@ -309,6 +309,11 @@ header {
 }
 
 @media all and (max-width: 974px) {
+  .strapline {
+    top: 70px;
+    left: 50px;
+  }
+
   .form-box {
     margin: 0 auto;
     margin-top: 172px;
@@ -318,17 +323,18 @@ header {
 @media all and (max-width: 375px) {
 
   .strapline {
-    margin: 0 auto;
+    margin: 0 0 0 20px;
     left: 0;
     right: 0;
-    max-width: 80%;
+    max-width: 300px;
     height: auto;
+    top: 58px;
   }
 
   .LoginRegister {
     padding-bottom: 30px;
+    padding-top: 130px;
     height: auto;
-    padding-top: 150px;
   }
 
   .form-box {
