@@ -417,11 +417,6 @@
     </script>
 
     <div id="root">
-      <!--
-      <header>
-        <i class="fa fa-bars menu"></i><img alt="logo" src="/assets/logo-helm.png">
-      </header>
-      -->
 
       <img src="/assets/strapline.png" alt="Helm - Your Health and care data under control" class="strapline" />
 
@@ -429,34 +424,17 @@
 
         <div class="form-box">
           <div class="titleLogin">
-            Please change your temporary password to a permanent one<i class="fa fa-angle-down"></i>
+            Attention!
           </div>
 
-          <div class="grant-debug">
-            <%- details.params.error %>
-          </div>
-
+          <p>&nbsp;</p>
           <p>
-            Your new password should be at least 7 characters in length, and contain a mixture of
-            upper-case letters, lower-case letters and numbers.
+            <center>
+              You have exceeded the maximum number of attempts to log in
+            </center>
           </p>
-
-          <form class="forms" autocomplete="off" action="/openid/interaction/<%= details.uuid %>/changePassword" method="post">
-
-            <label>
-              Enter your new password
-              <input placeholder="Your new password" required type="password" name="password"  autofocus="on" />
-            </label>
-
-            <label>
-              Re-enter your new password
-              <input placeholder="Your new password" required type="password" name="password2" />
-            </label>
-
-            <div class="btn-box">
-              <button class="succes" type="submit"><i class="fa fa-check"></i>Update Password</button>
-            </div>
-          </form>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
 
         </div>
       </div>
