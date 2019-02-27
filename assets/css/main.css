@@ -375,6 +375,12 @@ header {
   text-align: left;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.remodal {
+    top: 20px;
+  }
+}
+
   .remodal .modal__header {
     background: #3596f4;
     padding: 10px;
